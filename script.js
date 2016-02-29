@@ -42,6 +42,7 @@ function initMap() {
         } // Don't do anything for N or E
         return dd;
     }
+    /*File input */
     document.getElementById("file-input").onchange = function (e) {
         /*Retrive Geotags from image*/
         EXIF.getData(e.target.files[0], function () {
